@@ -30,7 +30,7 @@ jobs:
         with:
           node-version: ${{ matrix.node-version }}
           cache: 'npm'
-      - run: npm ci || npm i
+      - run: npm i
       - run: npm run gh-pages --if-present
 
       - name: Deploy
