@@ -8,6 +8,9 @@ module.exports = {
 	],
 	parser: '@typescript-eslint/parser',
 	plugins: ['@typescript-eslint'],
+	rules: {
+		'import/named': 'off'
+	},
 	parserOptions: {
 		sourceType: 'module',
 		ecmaVersion: 2020,
